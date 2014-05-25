@@ -55,8 +55,7 @@ class Customer {
     
     public String htmlStatement() {
     	Enumeration rentals = _rentals.elements();
-    	String result = "<H1>Rentals for <EM>" + getName() + "</EM></
-    			H1><P>\n";
+    	String result = "<H1>Rentals for <EM>" + getName() + "</EM></H1><P>\n";
     			while (rentals.hasMoreElements()) {
     				Rental each = (Rental) rentals.nextElement();
     				//show figures for each rental
@@ -66,8 +65,7 @@ class Customer {
     			"</EM><P>\n";
     			result += "On this
     					String.valueOf(each.getCharge()) + "<BR>\n";
-    			owe <EM>" + String.valueOf(getTotalCharge()) +
-    			rental you earned <EM>" + String.valueOf(getTotalFrequentRenterPoints()) +
+    			owe <EM>" + String.valueOf(getTotalCharge()) + rental you earned <EM>" + String.valueOf(getTotalFrequentRenterPoints()) +
     			"</EM> frequent renter points<P>"; 
     	return result;
     }
